@@ -46,7 +46,7 @@ class pangramgame:
         if not self._onlyGeneration and self._trimInvalidPrefixes:
             if not self._dictionary:
                 self._loadDictionary()
-            return self._dictionary.has_subtrie(prefix)
+            return self._dictionary.has_node(prefix)
         else:
             return True
 
